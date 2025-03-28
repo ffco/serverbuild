@@ -1,0 +1,86 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## Project Overview
+This project focuses on setting up and configuring a Dell R420 server running Ubuntu Server LTS (no GUI) for deployment on the public internet. The server will host sensitive information and eventually run Docker-based projects. Instructions and scripts generated will be uploaded to GitHub, then downloaded and executed on the server. The scope is limited to operating system setup and initial configuration, with additional files for related tasks (e.g., backups, server operations).
+
+### Audience
+- Primary user: Someone with basic technical knowledge but limited experience in server administration, Unix, or Docker.
+- Maintainer: A beginner in deploying and administering Unix and Docker servers.
+
+### Project Goals
+- Provide clear, concise, and modular instructions for setting up the server.
+- Ensure a secure, straightforward, and optimized configuration.
+- Prepare the server for future Docker-based projects with multiple users and isolated containers.
+
+## General Guidelines
+- **Simplicity**: Prioritize the least complex solutions possible, avoiding advanced configurations unless necessary for security or functionality.
+- **Clarity**: Write instructions in plain language, step-by-step, assuming minimal prior knowledge of server administration.
+- **Modularity**: Split instructions into multiple independent files for each major milestone or task (e.g., OS installation, security setup, disk configuration).
+- **Comments**: Include concise comments in configuration files and scripts explaining the purpose of each element.
+- **GitHub Integration**: Begin each instruction set with steps to prepare and clone the GitHub repository onto the server, including when and how to execute the scripts.
+
+## Project Scope and Requirements
+
+### 1. Hardware and Initial Setup
+- **Server Hardware**: Dell R420 with iDRAC, 2x 250GB SSDs, 2x 10TB spinning disk drives.
+- **OS**: Ubuntu Server LTS (no GUI), installed via USB media.
+- **Requirements**:
+  - Generate instructions for configuring and connecting to the iDRAC to install the OS from USB.
+  - Create a separate file for updating hardware drivers and embedded tools (e.g., firmware).
+  - Optimize disk setup for two independent redundant subsystems (e.g., RAID or mirroring for SSDs and spinning disks).
+
+### 2. Operating System Configuration
+- **Scope**: Limited to OS setup and initial configuration (no Docker installation in this phase).
+- **Requirements**:
+  - Configure the OS for future Docker use (e.g., networking, user management).
+  - Support multiple non-root users with selective access to future Docker containers.
+  - Optimize filesystem and storage for performance and redundancy.
+
+### 3. Security
+- **Context**: Server will be public-facing and host sensitive data.
+- **Requirements**:
+  - Provide server-side and client-side instructions for secure remote access (e.g., SSH with key-based authentication).
+  - Configure a firewall (e.g., UFW) as part of the setup.
+  - Include best practices for securing Ubuntu Server (e.g., disabling root login, updating packages).
+  - Ensure configurations are beginner-friendly but robust.
+
+### 4. Server Operations
+- **Requirements**:
+  - Create a separate file with instructions for periodic tasks (e.g., checking disk health, monitoring logs, updating the OS).
+  - Keep instructions simple and actionable for a beginner.
+
+### 5. Automated Backups
+- **Requirements**:
+  - Create a separate file for setting up automated backups from primary disks (SSDs) to secondary disks (spinning disks).
+  - Ensure the solution is simple, reliable, and includes verification steps.
+
+### 6. Network Mobility
+- **Context**: Server will move between networks.
+- **Requirements**:
+  - Include instructions for changing IP address, subnet mask, and related network settings.
+  - Ensure steps are clear and account for potential network downtime.
+
+### 7. Tool Recommendations
+- **Requirements**:
+  - Suggest non-complex tools or applications to simplify server deployment and management (e.g., monitoring, log viewing).
+  - Provide a brief explanation of each recommendation’s purpose.
+
+### 8. Future Docker Setup (Separate Rules File)
+- **Requirements**:
+  - Create a separate Cursor Rules File for Docker setup, tailored to this environment.
+  - Include context about the hardware, OS, and security setup from this project.
+  - Focus on supporting multiple projects, inter-container communication, and user-specific access.
+
+## Constraints
+- **No GUI**: All instructions must work in a terminal-only environment.
+- **Beginner-Friendly**: Avoid jargon or assumptions of advanced knowledge.
+- **Security First**: Prioritize secure defaults and configurations, even if it adds a step.
+- **No Implementation**: Cursor AI should not execute or test solutions—only generate instructions and scripts.
+
+## Additional Notes
+- Start each instruction file with a section on preparing the GitHub repo (e.g., cloning it to the server) and when/how to run the scripts.
+- Ensure scripts are executable by a non-expert with clear guidance on permissions (e.g., `chmod`).
+- Account for the server’s future use (Docker, multiple users) in OS and disk setup without exceeding the current scope.
