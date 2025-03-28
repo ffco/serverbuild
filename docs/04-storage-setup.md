@@ -5,8 +5,6 @@ This guide covers the configuration of storage systems for your Dell R420 server
 ## Pre-Installation RAID Setup
 
 ### PERC H710P Mini RAID Configuration
-# The PERC H710P Mini is Dell's hardware RAID controller that provides reliable storage management
-# and better performance than software RAID solutions.
 
 #### Accessing RAID Configuration
 1. During server boot, press `Ctrl+R` when prompted to enter the PERC H710P Mini configuration
