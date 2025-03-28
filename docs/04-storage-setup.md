@@ -1,8 +1,9 @@
-# Storage Configuration Guide
+# Storage Setup Guide
 
-This guide covers the configuration of storage systems for your Dell R420 server, including RAID setup and backup configuration.
+## Overview
+This guide provides detailed instructions for setting up the storage configuration on the Dell R420 server. This must be done before OS installation to set up the storage foundation.
 
-## Pre-Installation RAID Setup
+## Prerequisites
 
 ### PERC H710P Mini RAID Configuration
 
