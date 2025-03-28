@@ -39,9 +39,3 @@ This repository contains scripts and configuration files for setting up a Dell R
 
 ## Security Notice
 This server is designed to be deployed on the public internet. All configurations prioritize security and follow best practices for server hardening.
-
-## License
-[Your chosen license]
-
-## Contributing
-[Your contribution guidelines] 
